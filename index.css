@@ -205,14 +205,9 @@ a:hover .para {
     transform: rotate(45deg);
 }
 
-.arrow:hover {
+a:hover .arrow {
     border-top: 8px solid #B59B85;
     border-right: 8px solid #B59B85;
 }
-
-/* em::after {
-    content: ">";
-} */
-
 
 
