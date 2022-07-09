@@ -1,10 +1,14 @@
-const link = document.querySelector('.side a');
-const containerMain = document.querySelector('container');
-const main = document.querySelector('main');
-console.log(main);
+console.log("hello");
 
-console.log(link);
 
-document.body.addEventListener('animationend', () => {
-    console.log("salt");
-})
+
+
+const left = document.getElementById("left-side");
+
+const handleMove = e => {
+  left.style.width = `${e.clientX / window.innerWidth * 100}%`;
+}
+
+document.onmousemove = e => handleMove(e);
+
+document.ontouchmove = e => handleMove(e.touches[0]);

@@ -181,10 +181,11 @@ a {
 
 .para {
     opacity: 0;
-    padding: 10px 5px 0 0 ;
+    padding: 10px 5vw 0 0 ;
     width: 50px;
     font-size: 20px;
     transition: opacity 0.5s;
+    text-transform: uppercase;
 
 }
 
@@ -196,36 +197,102 @@ a:hover .para {
     display: inline-block;
     width: 50px;
     height: 50px;
+    transform: rotate(45deg);
     border-top: 2px solid #B59B85;
     border-right: 2px solid #B59B85;
-    transition: border-top 0.3s ease-out, border-right 0.3s ease-out;
 }
 
-.arrow-right {
-    transform: rotate(45deg);
-}
 
 a:hover .arrow {
-    border-top: 8px solid #B59B85;
-    border-right: 8px solid #B59B85;
+    animation: slide 1s ease-in-out infinite alternate;
 }
 
-
-.main {
-    animation: lol 1s ease-out forwards;
-}
-
-@keyframes lol {
+@keyframes slide {
     0% {
-        transform: scale(0);
+        transform: translateX(0) rotate(45deg);     
     }
+    100% {
+        transform: translateX(45px) rotate(45deg);     
+    }
+}
 
-    50% {
-        transform: scale(1.5);
+#twitter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 80px;
+    border-right: 2px solid #DDBDAB;
+    border-bottom: 2px solid #DDBDAB;
+    color: #DDBDAB;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 0 0 5px 0;
+    animation: spawn 1s forwards 1s  ;
+    opacity: 0;
+}
 
+#github {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 80px;
+    border-bottom: 2px solid #DDBDAB;
+    border-left: 2px solid #DDBDAB;
+    border-radius: 0 0 0 5px;
+    padding: 10px;
+    color: #DDBDAB;
+    overflow: hidden;
+    animation: spawn2 1s forwards 1s;
+    opacity: 0;
+}
+
+#linkedin {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    /* transform: translateX(-50%); */
+    font-size: 80px;
+    border-top: 2px solid #DDBDAB;
+    border-right: 2px solid #DDBDAB;
+    border-left: 2px solid #DDBDAB;
+    color: #DDBDAB;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+    animation: spawn3 1s forwards 1s; 
+    opacity: 0;
+}
+
+
+@keyframes spawn {
+    0% {
+        transform: translateX(-200px);
     }
 
     100% {
-        transform: scale(1);
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes spawn2 {
+    0% {
+        transform: translateX(200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes spawn3 {
+    0% {
+        transform: translateY(200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
