@@ -29,21 +29,57 @@ isolation: isolate;
 
 /* #B59B85; */
 
+
+/* 
+.card-moving {
+    width: 200px;
+    height: 300px;
+    border: 1px solid #B59B85;
+    position: absolute;
+    animation: top 7s linear 0s infinite alternate, 
+    left 9s linear 0s infinite alternate;
+}
+
+.card-moving2 {
+    width: 200px;
+    height: 300px;
+    border: 1px solid #B59B85;
+    position: absolute;
+    animation: top2 7s linear 0s infinite alternate, 
+    left2 9s linear 0s infinite alternate;
+} */
+
+
+/* @keyframes left{
+    from { left: 0; } to { left: 100%;}
+  }
+  @keyframes top {
+    from { top: 0; } to { top: 100%;}
+  }
+
+  @keyframes left2{
+    from { left: 100%; } to { left: 0%;}
+  }
+  @keyframes top2 {
+    from { top: 100%; } to { top: 0%;}
+  } */
+
+
 .container {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     height: 100vh;
     background: #261D17;;
 }
 
 .presentation {
     min-width: 350px;
-    display: flex;
-    align-items: center;
 }
 
-
+.text-presentation {
+    text-align: center;
+}
 
 .presentation h1 {
     font-size: 3vw;
@@ -216,83 +252,72 @@ a:hover .arrow {
     }
 }
 
-#twitter {
+
+.my-profil {
+    height: calc(100% - 280px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container {
+    perspective: 1000;
+    perspective-origin: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    margin: 0 50px;
+    width: 200px;
+    height: 300px;
+    transition: transform 0.8s cubic-bezier(0.86,0,0.07,1);
+    transform-style: preserve-3d;
+}
+
+.front-card, .back-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 80px;
-    border-right: 2px solid #DDBDAB;
-    border-bottom: 2px solid #DDBDAB;
-    color: #DDBDAB;
-    padding: 10px;
-    overflow: hidden;
-    border-radius: 0 0 5px 0;
-    animation: spawn 1s forwards 1s  ;
-    opacity: 0;
-}
-
-#github {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 80px;
-    border-bottom: 2px solid #DDBDAB;
-    border-left: 2px solid #DDBDAB;
-    border-radius: 0 0 0 5px;
-    padding: 10px;
-    color: #DDBDAB;
-    overflow: hidden;
-    animation: spawn2 1s forwards 1s;
-    opacity: 0;
-}
-
-#linkedin {
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    /* transform: translateX(-50%); */
-    font-size: 80px;
-    border-top: 2px solid #DDBDAB;
-    border-right: 2px solid #DDBDAB;
-    border-left: 2px solid #DDBDAB;
-    color: #DDBDAB;
-    padding: 10px;
-    overflow: hidden;
-    border-radius: 5px 5px 0 0;
-    animation: spawn3 1s forwards 1s; 
-    opacity: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    background: #DDBDAB;
 }
 
 
-@keyframes spawn {
-    0% {
-        transform: translateX(-200px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.front-card h2 {
+    text-transform: uppercase;
+    color: #261D17;
 }
 
-@keyframes spawn2 {
-    0% {
-        transform: translateX(200px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.back-card {
+    transform: rotateY(180deg);
 }
 
-@keyframes spawn3 {
-    0% {
-        transform: translateY(200px);
-    }
+.back-card ul li {
+    color: #261D17;
+    margin: 5px 0;
+}
 
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.back-card .soft-skills-list li{
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+.back-card .social-media a{
+    margin: 20px 0;
+    font-size: 30px;
+    color: #261D17;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+
 }

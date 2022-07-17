@@ -33,6 +33,7 @@ isolation: isolate;
     color: #DDBDAB;
     text-transform: uppercase;
     padding-top: 45px;
+    animation: swing-in-top-fwd 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 }
 
 .container-main {
@@ -50,6 +51,7 @@ isolation: isolate;
 
 .card {
     position: relative;
+    animation: swing-in-top-fwd 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 }
 
 .card .face {
@@ -138,4 +140,18 @@ i {
 .card .face.face2 .content a:hover {
     background: #B59B85;
     color: #261D17;
+}
+
+
+@keyframes swing-in-top-fwd {
+0% {
+    transform: rotateX(-100deg);
+    transform-origin: top;
+    opacity: 0;
+}
+100% {
+    transform: rotateX(0deg);
+    transform-origin: top;
+    opacity: 1;
+}
 }
