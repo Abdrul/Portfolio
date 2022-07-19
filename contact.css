@@ -1,0 +1,83 @@
+*, *::before, *::after {
+box-sizing: border-box;
+}
+* {
+margin: 0;
+padding: 0;
+}
+html, body {
+height: 100vh;
+background: #261D17;
+}
+body {
+line-height: 1.5;
+-webkit-font-smoothing: antialiased;
+overflow: hidden;
+}
+img, picture, video, canvas, svg {
+display: block;
+max-width: 100%;
+}
+input, button, textarea, select {
+font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+overflow-wrap: break-word;
+}
+#root, #__next {
+isolation: isolate;
+}
+
+.title-contact {
+    text-align: center;
+    color: #DDBDAB;
+    text-transform: uppercase;
+    padding-top: 45px;
+}
+
+.container-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 141px);
+    width: 100vw;
+}
+
+.form-contact {
+    background: #000;
+    width: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+label, input {
+    display: block;
+    /* width: 100px; */
+}
+
+label {
+    font-size: 1.2rem;
+    color: #DDBDAB;
+}
+
+input {
+    background: #DDBDAB;
+    width: 100%;
+    color: #261D17;
+}
+
+textarea {
+    width: 100%;
+}
+
+.input-form {
+    margin: 30px 0;
+}
+
+.btn-form {
+    display: block;
+    margin: 0 auto;
+}
