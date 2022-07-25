@@ -177,7 +177,7 @@ a:hover .arrow-right {
 
 .card .face.face1 .content {
     padding-top: 15px;
-    opacity: 0.2;
+    opacity: 0.7;
     transform: 0.5s;
     display: flex;
     flex-direction: column;
@@ -196,7 +196,7 @@ h3 {
     margin: 10px 0 0;
     text-align: center;
     font-size: 1.5em;
-    color: #fff;
+    color: #261D17;
     padding: 0;
 }
 
