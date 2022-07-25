@@ -33,6 +33,7 @@ isolation: isolate;
     color: #DDBDAB;
     text-transform: uppercase;
     padding-top: 45px;
+    font-size: clamp(1.2rem, 2vw, 4rem);
 }
 
 
@@ -105,7 +106,6 @@ a:hover .arrow-left {
 
 label, input {
     display: block;
-    /* width: 100px; */
 }
 
 label {
@@ -161,4 +161,49 @@ textarea {
 
 .btn-form:hover span {
     transform: translate(-8px, -8px);
+}
+
+.nav-tablette-mobile {
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .form-contact {
+        width: 70%;
+    
+    }
+}
+
+
+@media only screen and (max-width: 650px) {
+
+    .left-side {
+        display: none;
+    } 
+
+    .nav-tablette-mobile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+        width: 100%;
+        border: 1px solid #B59B85;
+        font-size: 20px;
+    }
+
+    .nav-tablette-mobile::after {
+        content: "";
+        height: 70px;
+        width: 1px;
+        position: absolute;
+        background: #B59B85;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    .form-contact {
+        width: 90%;
+    }
 }
