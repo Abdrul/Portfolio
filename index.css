@@ -6,7 +6,7 @@ margin: 0;
 padding: 0;
 }
 html, body {
-background: #261D17;
+background: #f9f4ef;
 height: 100vh;
 }
 body {
@@ -44,7 +44,7 @@ Part of navigation on computer
 }
 
 a {
-    color: #B59B85;
+    color: #f25042;
     text-decoration: none;
     display: flex;
 }
@@ -60,6 +60,7 @@ a {
 
 a:hover .para {
     opacity: 1;
+    cursor: pointer;
 }
 
 .arrow-right {
@@ -67,8 +68,8 @@ a:hover .para {
     width: 50px;
     height: 50px;
     transform: rotate(45deg);
-    border-top: 2px solid #B59B85;
-    border-right: 2px solid #B59B85;
+    border-top: 2px solid #8c7851;
+    border-right: 2px solid #8c7851;
 }
 
 
@@ -91,14 +92,38 @@ Part of title and paragraph of the portfolio
 
 
 .text-presentation {
-    text-align: center;
+    /* text-align: center; */
+    /* display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "image name"
+    "image description"
+    ;
+    justify-content: center; */
+    /* margin-top: 25px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-top: 25px;
+}
+
+.text-presentation img {
+    border-radius: 56% 44% 73% 27% / 45% 68% 32% 55%;
+    width: 200px;
+    height: auto;
+    grid-area: image;
+    object-fit: cover;
 }
 
 .presentation h1 {
-    font-size: clamp(2rem, 6vw, 6rem);
+    font-size: clamp(2rem, 6vw, 5rem);
     transform: scale(0.94);
     animation: scale 2s forwards cubic-bezier(0.5, 1, 0.89, 1);
-    color: #DDBDAB;
+    color: #020826;
+    text-align: center;
 }
 
 @keyframes scale {
@@ -145,8 +170,8 @@ Part of title and paragraph of the portfolio
 
 .presentation p {
     font-size: clamp(1.2rem, 4vw, 2rem);
-    margin-top: 35px;
-    color: #B59B85;
+    text-align: center;
+    color: #716040;
 }
 
 .presentation p span {
@@ -223,7 +248,7 @@ Part of my skills, soft skills etc ...
 }
 
 .card-container {
-    perspective: 1000;
+    perspective: 1000px;
     perspective-origin: top;
     display: flex;
     justify-content: center;
@@ -250,13 +275,13 @@ Part of my skills, soft skills etc ...
     width: 200px;
     min-height: 300px;
     border-radius: 5px;
-    background: #DDBDAB;
+    background: #fffffe;
 }
 
 
 .front-card h2 {
     text-transform: uppercase;
-    color: #261D17;
+    color: #020826;
 }
 
 .back-card {
@@ -264,7 +289,7 @@ Part of my skills, soft skills etc ...
 }
 
 .back-card ul li {
-    color: #261D17;
+    color: #716040;
     margin: 5px 0;
 }
 
@@ -278,7 +303,7 @@ Part of my skills, soft skills etc ...
 .back-card .social-media a{
     margin: 20px 0;
     font-size: 30px;
-    color: #261D17;
+    color: #716040;
 }
 
 .card:hover {
@@ -306,7 +331,7 @@ Part of my skills, soft skills etc ...
 
 
 @media only screen and (max-width: 1024px) {
-    
+
     .right-side {
         display: none;
     }
@@ -346,23 +371,7 @@ Part of my skills, soft skills etc ...
     }    
 
     .nav-tablette-mobile {
-        display: block;
         position: relative;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 70px;
-        width: 100%;
-        border: 1px solid #B59B85;
-        font-size: 20px;
-    }
-
-    .nav-tablette-mobile::after {
-        content: "";
-        height: 70px;
-        width: 1px;
-        position: absolute;
-        background: #B59B85;
     }
 
 }
