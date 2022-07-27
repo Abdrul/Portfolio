@@ -36,7 +36,7 @@ Part of navigation on computer
     display: none;
 }
 
-.right-side {
+/* .right-side {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -84,11 +84,60 @@ a:hover .arrow-right {
     100% {
         transform: translateX(45px) rotate(45deg);     
     }
+} */
+
+
+.menu {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background: #8c7851;
+    border-radius: 0 0 0 100%;
+    /* right: 0; */
+    left: calc(100% - 100px);
+    transition: 0.5s;
 }
+
+.menu:hover {
+    height: 200px;
+    width: 200px;
+    left: calc(100% - 200px)
+}
+
+.menu nav {
+    position: absolute;
+    top: -100px;
+    left: 300px;
+    transition: 0.5s;
+}
+
+.menu:hover nav {
+    top: 0%;
+    left: 20%;
+}
+
+.menu nav ul {
+    padding-top: 25px;
+}
+
+.menu a {
+    /* display: block; */
+    text-decoration: none;
+    color: #fffffe;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.menu a:nth-child(2) {
+    padding-left: 25px;
+}
+
+
 
 /* 
 Part of title and paragraph of the portfolio
 */
+
 
 
 .text-presentation {
@@ -323,22 +372,9 @@ Part of my skills, soft skills etc ...
 }
 
 
-@media only screen and (max-width: 1440px) {
-    .para {
-        display: none;
-    }
-}
 
-
+/* 
 @media only screen and (max-width: 1024px) {
-
-    .right-side {
-        display: none;
-    }
-
-    /* 
-    Part of navigation responsive
-    */
 
     .nav-tablette-mobile {
         display: block;
@@ -361,7 +397,7 @@ Part of my skills, soft skills etc ...
         background: #B59B85;
     }
 
-}
+} */
 
 
 @media only screen and (max-width: 650px) {
@@ -370,8 +406,8 @@ Part of my skills, soft skills etc ...
         margin-top: 50px;
     }    
 
-    .nav-tablette-mobile {
+    /* .nav-tablette-mobile {
         position: relative;
-    }
+    } */
 
 }
