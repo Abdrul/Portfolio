@@ -96,6 +96,7 @@ a:hover .arrow-right {
     /* right: 0; */
     left: calc(100% - 100px);
     transition: 0.5s;
+    z-index: 150;
 }
 
 .menu:hover {
@@ -131,6 +132,7 @@ a:hover .arrow-right {
 .menu a:nth-child(2) {
     padding-left: 25px;
 }
+
 
 
 
@@ -348,9 +350,14 @@ Part of my skills, soft skills etc ...
     list-style: none;
 }
 
+.back-card .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .back-card .social-media a{
-    margin: 20px 0;
     font-size: 30px;
     color: #716040;
 }
