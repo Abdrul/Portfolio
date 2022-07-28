@@ -32,60 +32,6 @@ isolation: isolate;
 Part of navigation on computer
 */
 
-.nav-tablette-mobile {
-    display: none;
-}
-
-/* .right-side {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 5%;
-}
-
-a {
-    color: #f25042;
-    text-decoration: none;
-    display: flex;
-}
-
-.para {
-    opacity: 0;
-    padding: 10px 5vw 0 0 ;
-    width: 50px;
-    font-size: 20px;
-    transition: opacity 0.5s;
-    text-transform: uppercase;
-}
-
-a:hover .para {
-    opacity: 1;
-    cursor: pointer;
-}
-
-.arrow-right {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    transform: rotate(45deg);
-    border-top: 2px solid #8c7851;
-    border-right: 2px solid #8c7851;
-}
-
-
-a:hover .arrow-right {
-    animation: slide 1s ease-in-out infinite alternate;
-}
-
-@keyframes slide {
-    0% {
-        transform: translateX(0) rotate(45deg);     
-    }
-    100% {
-        transform: translateX(45px) rotate(45deg);     
-    }
-} */
-
 
 .menu {
     position: fixed;
@@ -143,16 +89,6 @@ Part of title and paragraph of the portfolio
 
 
 .text-presentation {
-    /* text-align: center; */
-    /* display: grid;
-    gap: 2rem;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "image name"
-    "image description"
-    ;
-    justify-content: center; */
-    /* margin-top: 25px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -163,7 +99,7 @@ Part of title and paragraph of the portfolio
 
 .text-presentation img {
     border-radius: 56% 44% 73% 27% / 45% 68% 32% 55%;
-    width: 200px;
+    width: 150px;
     height: auto;
     grid-area: image;
     object-fit: cover;
@@ -295,7 +231,6 @@ Part of my skills, soft skills etc ...
 
 .my-profil {
     margin-top: 150px;
-    margin-bottom: 50px;
 }
 
 .card-container {
@@ -305,6 +240,7 @@ Part of my skills, soft skills etc ...
     justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
+    padding-bottom: 25px;
 }
 
 .card {
@@ -378,33 +314,13 @@ Part of my skills, soft skills etc ...
     }
 }
 
+@media only screen and (max-width: 1000px) {
 
+    .my-profil {
+        margin-top: 80px;
+    }    
 
-/* 
-@media only screen and (max-width: 1024px) {
-
-    .nav-tablette-mobile {
-        display: block;
-        position: fixed;
-        bottom: 0;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 70px;
-        width: 100%;
-        border: 1px solid #B59B85;
-        font-size: 20px;
-    }
-
-    .nav-tablette-mobile::after {
-        content: "";
-        height: 70px;
-        width: 1px;
-        position: absolute;
-        background: #B59B85;
-    }
-
-} */
+}
 
 
 @media only screen and (max-width: 650px) {
@@ -412,9 +328,5 @@ Part of my skills, soft skills etc ...
     .my-profil {
         margin-top: 50px;
     }    
-
-    /* .nav-tablette-mobile {
-        position: relative;
-    } */
 
 }
