@@ -125,7 +125,7 @@ isolation: isolate;
 
 .card .face.face1 .content {
     padding-top: 15px;
-    opacity: 0.7;
+    opacity: 0.6;
     transform: 0.5s;
     display: flex;
     flex-direction: column;
