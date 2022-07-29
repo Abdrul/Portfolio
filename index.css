@@ -273,6 +273,7 @@ Part of my skills, soft skills etc ...
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     position: absolute;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -285,9 +286,15 @@ Part of my skills, soft skills etc ...
 
 .front-card h2 {
     text-transform: uppercase;
+    padding-bottom: 5px;
     color: #020826;
     font-family: 'Mukta Vaani', sans-serif;
     font-weight: 500;
+}
+
+.front-card img {
+    width: 50px;
+    object-fit: cover;
 }
 
 .back-card {
