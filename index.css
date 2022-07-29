@@ -73,6 +73,8 @@ Part of navigation on computer
     color: #fffffe;
     text-transform: uppercase;
     font-size: 24px;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight: 400;
 }
 
 .menu a:nth-child(2) {
@@ -122,6 +124,8 @@ Part of title and paragraph of the portfolio
     animation: scale 2s forwards cubic-bezier(0.5, 1, 0.89, 1);
     color: #020826;
     text-align: center;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-weight: 700;
 }
 
 @keyframes scale {
@@ -170,6 +174,8 @@ Part of title and paragraph of the portfolio
     font-size: clamp(1.2rem, 4vw, 2rem);
     text-align: center;
     color: #716040;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight: 600;
 }
 
 .presentation p span {
@@ -280,6 +286,8 @@ Part of my skills, soft skills etc ...
 .front-card h2 {
     text-transform: uppercase;
     color: #020826;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight: 500;
 }
 
 .back-card {
@@ -289,12 +297,16 @@ Part of my skills, soft skills etc ...
 .back-card ul li {
     color: #716040;
     margin: 5px 0;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight: 500;
 }
 
 .back-card .soft-skills-list li{
     text-align: center;
     font-size: 1rem;
     list-style: none;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight: 500;
 }
 
 .back-card .social-media {

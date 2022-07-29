@@ -31,6 +31,8 @@ isolation: isolate;
     
 .title-project {
     text-align: center;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-weight: 700;
     color: #020826;
     text-transform: uppercase;
     padding-top: 45px;
@@ -78,6 +80,8 @@ isolation: isolate;
     color: #fffffe;
     text-transform: uppercase;
     font-size: 24px;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight: 400;
 }
 
 .menu a:nth-child(2) {
@@ -146,6 +150,8 @@ h3 {
     font-size: 1.5em;
     color: #020826;
     padding: 0;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight: 600;
 }
 
 i {
@@ -169,6 +175,8 @@ i {
 
 .card .face.face2 .content {
     color: #716040;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight: 500;
 }
 
 .card .face.face2 .content a {

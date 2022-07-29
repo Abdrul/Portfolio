@@ -34,6 +34,8 @@ isolation: isolate;
     text-transform: uppercase;
     padding-top: 25px;
     font-size: clamp(1.2rem, 2vw, 4rem);
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-weight: 700;
 }
 
 .menu {
@@ -76,6 +78,8 @@ isolation: isolate;
     color: #020826;
     text-transform: uppercase;
     font-size: 24px;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight: 400;
 }
 
 .menu a:nth-child(2) {
@@ -98,19 +102,22 @@ isolation: isolate;
 }
 
 
-label, input {
+label, input, textarea {
     display: block;
+    font-family: 'Mukta Vaani', sans-serif;
 }
 
 label {
     font-size: 1.2rem;
     color: #fffffe;
     padding-bottom: 5px;
+    font-weight: 600;
 }
 
 input {
     background: #eaddcf;
     color: #020826;
+    font-weight: 500;
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.2);
     font-size: 22px;
@@ -126,6 +133,7 @@ textarea {
     outline: 0;
     background: #eaddcf;
     color: #020826;
+    font-weight: 600;
 }
 
 .input-form {
@@ -151,6 +159,8 @@ textarea {
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: transform 0.15s ease-out;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-weight: 400;
 }
 
 .btn-form:hover span {
