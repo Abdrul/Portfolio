@@ -12,7 +12,7 @@ background: #8c7851;
 body {
 line-height: 1.5;
 -webkit-font-smoothing: antialiased;
-/* overflow: hidden; */
+overflow: hidden;
 }
 img, picture, video, canvas, svg {
 display: block;
@@ -36,6 +36,8 @@ isolation: isolate;
     font-size: clamp(1.2rem, 2vw, 4rem);
     font-family: 'Oleo Script Swash Caps', cursive;
     font-weight: 700;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
 }
 
 .menu {
@@ -93,6 +95,37 @@ isolation: isolate;
     justify-content: center;
     align-items: center;
     height: calc(100% - 141px);
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
 }
 
 .form-contact {
