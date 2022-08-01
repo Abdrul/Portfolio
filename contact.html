@@ -28,32 +28,35 @@
         <form class="form-contact" id="contact-form">
             <div class="input-form">
                 <label for="firstname">Name</label>
-                <input type="text" id="firstname" name="name">
+                <input type="text" id="firstname" name="name" maxlength="24">
             </div>
+            <span class="error-msg">Veuillez mettre un nom valide</span>
             <div class="input-form">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email">
             </div>
+            <span class="error-msg">Veuillez mettre un email valide</span>
             <div class="input-form">
                 <label for="message">Message</label>
                 <textarea id="message" name="message"></textarea>
             </div>
+            <span class="error-msg">Vous ne pouvez pas envoyer un message vide</span>
             <button class="btn-form">
                 <span>Send</span>
             </button>
         </form>
     </main>
 
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script src="contact.js"></script>
-<script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
-<script type="text/javascript">      
+<!-- <script type="text/javascript">      
     (function () {
     emailjs.init("403Z0LykCnUoSa-3Z");
     })();
-</script>
+</script> -->
 
-<script>
+<!-- <script>
 // listen to the form submission
 document
     .getElementById("contact-form")
@@ -75,6 +78,6 @@ document
         }
     );
     });
-</script>
+</script> -->
 </body>
 </html>
