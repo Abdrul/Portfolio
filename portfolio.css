@@ -34,7 +34,6 @@ isolation: isolate;
     font-family: 'Oleo Script Swash Caps', cursive;
     font-weight: 700;
     color: #020826;
-    text-transform: uppercase;
     padding-top: 45px;
     animation: swing-in-top-fwd 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 }
