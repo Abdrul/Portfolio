@@ -1,0 +1,43 @@
+---
+import ProjectDisplay from "./projectDisplay.astro";
+const imgProjectOne = [
+  "/dash1.png",
+  "/dash2.png",
+  "/dash3.png",
+  "/dash4.png",
+  "/dash5.png",
+  "/dash6.png",
+];
+
+const imgProjectTwo = ["/valo1.png", "/valo2.png", "/valo3.png"];
+
+const imgProjectThree = [
+  "/ecommer.png",
+  "/ecommerce2.png",
+  "/ecommer3.png",
+  "/ecommer4.png",
+  "/ecommer5.png",
+  "/ecommer1.png",
+];
+---
+
+<section class="bg-secondBackground pt-28 pb-20 px-8">
+  <!-- <div class="projets"> -->
+  <ProjectDisplay content={imgProjectOne}>
+    Dans ce projet, j’ai réalisé depuis une maquette un dashboard complet qui a
+    pour but d’entretenir son entreprise dans le jeu de GTA V, c’est une
+    intégration directement depuis FiveM dans le jeu. Le but de ce dashboard,
+    est que le chef d’entreprise puisse créer de nouveaux employés, pouvoir les
+    licencier, donner un grade, gérer les stocks de son entreprise, voire
+    graphiquement l’état de celui les dépenses et les recettes. Voir aussi
+    combien génère un employé etc… J’ai notamment travaillé en équipe de trois
+    sur projet, communication et écoute était de rigueur.
+  </ProjectDisplay>
+  <ProjectDisplay content={imgProjectTwo}>
+    Site qui consiste simplement à presenter les agents de valorant, les maps,
+    et enfin les armes de celui-ci. Ce projet avait pour but de travailler sur
+    react-query, d'implémenter des fonctionnalités comme le debounce pour ma
+    barre de recherche
+  </ProjectDisplay>
+  <!-- </div> -->
+</section>

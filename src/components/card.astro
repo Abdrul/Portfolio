@@ -1,0 +1,19 @@
+---
+export type Props = {
+  title: string;
+  icon: string;
+};
+const { icon, title } = Astro.props;
+---
+
+<div class="max-w-sm w-full bg-headline text-backgroundThree p-2.5 rounded-md">
+  <div
+    class="w-9 h-9 flex justify-center items-center border-2 rounded-full border-background"
+  >
+    <i class={icon}></i>
+  </div>
+  <h3 class="py-2.5">{title}</h3>
+  <p>
+    <slot />
+  </p>
+</div>

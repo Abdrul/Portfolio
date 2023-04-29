@@ -1,0 +1,36 @@
+---
+export type Props = {
+  content: string[];
+};
+const { content } = Astro.props;
+---
+
+<div
+  class="flex items-center gap-6 p-6 bg-background max-w-7xl w-full rounded-md mx-auto mb-14"
+>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      {
+        content.map((c) => (
+          <div class="swiper-slide  ">
+            <img class="rounded-md" src={c} alt="" />
+          </div>
+        ))
+      }
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <p class="max-w-md">
+    <slot />
+  </p>
+</div>
+
+<script>
+  import Swiper from "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js";
+  const swiper = new Swiper(".swiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
