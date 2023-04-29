@@ -1,4 +1,4 @@
-# Astro Starter Kit: Basics
+# https://portfolio-xi-five-26.vercel.app/
 
 ```
 npm create astro@latest -- --template basics
